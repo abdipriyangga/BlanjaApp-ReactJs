@@ -10,6 +10,8 @@ import Jacket from '../assets/images/jacket.png';
 import Short from '../assets/images/pants.png';
 import Pants from '../assets/images/short.png';
 import Shoes from '../assets/images/shoes.png';
+import Jas from '../assets/images/5.jpeg';
+
 export {
-    Logo, Img1, Img2, Img3, Img4, Tshirt, Jacket, Short, Pants, Shoes
+    Logo, Img1, Img2, Img3, Img4, Tshirt, Jacket, Short, Pants, Shoes, Jas
 }
