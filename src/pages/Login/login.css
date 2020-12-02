@@ -1,0 +1,46 @@
+.customer {
+    border: 2px solid #DB3022; 
+    background-color: #FFFFFF; 
+    cursor: pointer;
+    padding: 10px;
+}
+.customer:hover {
+    
+    background-color: #DB3022;
+    color: #FFFFFF;
+    font-weight: 1000;
+}
+
+.seller { 
+    width: 100px;
+    background-color: #DB3022;
+    color: #FFFFFF;
+    font-weight: 1000;
+    margin-left: -3px;
+    margin-top: 2px;
+    padding: 10px;
+}
+.login {
+    background-color: #DB3022;
+    color : #FFFFFF;
+    width: 100%;
+    font-weight: 1000;
+}
+.text-brand {
+    position: absolute;
+    margin-top: -30px ;
+    margin-left: 51%; 
+    margin-right: auto;
+}
+
+.box-logo {
+    padding: 10px; 
+    position: relative;
+}
+
+.box-btn {
+    margin-left:42%; 
+    margin-top: 20px; 
+    margin-bottom: 25px; 
+    margin-right: 40%;
+}

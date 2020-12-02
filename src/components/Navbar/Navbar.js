@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import {Modal, Button, DropdownButton, Dropdown} from 'react-bootstrap';
 import {Logo} from '../../assets'
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 function NavbarModal() {
     const [show, setShow] = useState(false);
@@ -88,10 +89,10 @@ export default class Navbar extends Component {
             <>
                 <div className="navbar navbar-expand-lg navbar-light bg-light" id="cus-nav" >
                     <div className="col-xs-12" id="brand-box">
-                        <button className="navbar-brand bg-light nav-btn" type="button">
+                        <div className="navbar-brand bg-light nav-btn" type="button">
                             <img src={Logo} alt="Logo Blanja" />
-                            <span className="text-brand p-2">Blanja</span>
-                        </button>
+                            <span className="text-brand">Blanja</span>
+                        </div>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -116,7 +117,9 @@ export default class Navbar extends Component {
                                     </button>
                                 </li>
                                 <li className="nav-item">
-                                    <button className="btn btn-login my-sm-2 " href="#" type="button">Login</button>
+                                    <Link to="/login" className="btn btn-login my-sm-2 " type="button">
+                                        Login
+                                    </Link>
                                     <button className="btn btn-signup my-sm-2" href="#" type="button">Sign Up</button>
                                 </li>
                             </ul>
