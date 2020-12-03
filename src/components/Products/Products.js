@@ -9,7 +9,7 @@ export default class Products extends Component {
       <>
         <section>
             <div className="container">
-                <div className="title-new">
+                <div className="title-new mt-5">
                     <h3>New</h3>
                     <p className="lead text-muted">You've never seen it before</p>
                 </div>
@@ -18,7 +18,7 @@ export default class Products extends Component {
 
         <article>
             <div className="container">
-                <div className="row d-flex flex-row justify-content-center">
+                <div className="row d-flex flex-row justify-content-center mt-5">
                     <NewdataP />
                 </div>
             </div>
@@ -26,7 +26,7 @@ export default class Products extends Component {
 
         <section>
             <div className="container">
-                <div className="title-new">
+                <div className="title-new mt-5">
                     <h3>Popular</h3>
                     <p className="lead text-muted">Find clothes that are trending recentyl</p>
                 </div>

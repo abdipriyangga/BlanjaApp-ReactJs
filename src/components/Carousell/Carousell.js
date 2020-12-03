@@ -17,7 +17,7 @@ export default class Carousell extends Component {
             lazyload: "ondemand",
             responsive: [
                 {
-                  breakpoint: 1023.98,
+                  breakpoint: 1028,
                   settings: {
                     centerMode: true,
                     centerPadding: "220px",
@@ -28,7 +28,7 @@ export default class Carousell extends Component {
                   },
                 },
                 {
-                  breakpoint: 991.98,
+                  breakpoint: 990,
                   settings: {
                     centerMode: true,
                     centerPadding: "100px",
@@ -39,7 +39,7 @@ export default class Carousell extends Component {
                   },
                 },
                 {
-                  breakpoint: 767.98,
+                  breakpoint: 768,
                   settings: {
                     arrows: false,
                     centerMode: true,
@@ -51,7 +51,7 @@ export default class Carousell extends Component {
                   },
                 },
                 {
-                  breakpoint: 575.98,
+                  breakpoint: 576,
                   settings: {
                     arrows: false,
                     centerMode: true,
@@ -70,18 +70,18 @@ export default class Carousell extends Component {
             <div className="container p-5">
                 <Slider {...settings}>
                 <div>
-                    <img src={Img1} alt="Credit to Joshua Earle on Unsplash"/>
-                    <h3>Women Edition</h3>
+                    <img src={Img1} className="img1" alt="Credit to Joshua Earle on Unsplash"/>
+                    <h3 className="txt-women">Women Edition</h3>
                 </div>
                 <div>
-                    <img src={Img2} alt="Credit to Alisa Anton on Unsplash"/>
-                    <h3> Trends in 2020</h3>
+                    <img src={Img2} className="img2" alt="Credit to Alisa Anton on Unsplash"/>
+                    <h3 className="txt2"> Trends in 2020</h3>
                 </div>
                 <div>
-                    <img src={Img3} alt="Credit to Igor Ovsyannykov on Unsplash"/>
-                    <h3> Black Edition</h3>    
+                    <img src={Img3} className="img3" alt="Credit to Igor Ovsyannykov on Unsplash"/>
+                    <h3 className="txt3"> Black Edition</h3>    
                 </div>
-                <div><img src={Img4} alt="Credit to Pierre Châtel-Innocenti on Unsplash"/></div>
+                <div><img src={Img4} className="img4" alt="Credit to Pierre Châtel-Innocenti on Unsplash"/></div>
                 </Slider>
             </div>
             </>

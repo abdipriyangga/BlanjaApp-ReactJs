@@ -88,11 +88,12 @@ export default class Navbar extends Component {
         return (
             <>
                 <div className="navbar navbar-expand-lg navbar-light bg-light" id="cus-nav" >
-                    <div className="col-xs-12" id="brand-box">
-                        <div className="navbar-brand bg-light nav-btn" type="button">
+                    <div className="col-xs-12 " id="brand-box">
+                        <Link to="/" className="navbar-brand bg-light nav-btn">
                             <img src={Logo} alt="Logo Blanja" />
-                            <span className="text-brand">Blanja</span>
-                        </div>
+                            
+                        </Link>
+                        <span style={{fontSize: 32, fontWeight:1000, fontFamily: 'metropolis', color: '#000000'}}>Blanja</span>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -112,15 +113,17 @@ export default class Navbar extends Component {
                         <div className="col-lg-4">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <button className="btn mr-sm-0 my-sm-2 mx-sm-2" href="#" type="button">
+                                    <Link className="btn mr-sm-0 my-sm-2 mx-sm-2" type="button">
                                         <i className="fas fa-shopping-cart bg-dadada btn-cart"></i>
-                                    </button>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/login" className="btn btn-login my-sm-2 " type="button">
                                         Login
                                     </Link>
-                                    <button className="btn btn-signup my-sm-2" href="#" type="button">Sign Up</button>
+                                    <Link to="/signup" className="btn btn-signup my-sm-2" type="button">
+                                        Sign Up
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

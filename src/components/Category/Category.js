@@ -1,48 +1,116 @@
 import React, { Component } from 'react'
-import {Tshirt, Jacket, Pants, Short, Shoes} from '../../assets'
+import {Tshirt, Jacket, Pants, Short, Shoes, Watch} from '../../assets'
 import { Link } from 'react-router-dom';
 import './category.css'
+import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default class Category extends Component {
     render() {
+        const settings = {
+            dots: true,
+            autoplay: false,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            lazyload: "progressive",
+            responsive: [
+                {
+                  breakpoint: 1028,
+                  settings: {
+                    centerMode: true,
+                    centerPadding: "220px",
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 0,
+                  },
+                },
+                {
+                  breakpoint: 990,
+                  settings: {
+                    centerMode: true,
+                    centerPadding: "100px",
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 0,
+                  },
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: "20px",
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 0,
+                  },
+                },
+                {
+                  breakpoint: 576,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: "-30px",
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 0,
+                  },
+                },
+            ],
+
+    }
         return (
             <div>
                 <div className="container">
                     <div className="title-category">
                             <h3>Category</h3>
                             <p className="lead text-muted">What are you currently looking for</p>
-                        <div className="row row-col-5 ml-auto d-flex justify-content-around">
-                                <div className="col col-md-auto rounded box brand-tshirt mb-5">
+                    </div>
+                    <div>
+                        <Slider {...settings}>
+                                <div className="brand-tshirt mb-5">
                                     <Link to=''>
-                                        <img src={Tshirt} alt="" className="fluid mx-auto d-block w-100"/>
+                                        <img src={Tshirt} alt="" />
                                     </Link>
-                                    <h3 >T-Shirt</h3>
+                                    <h3 className="txt-tshirt">T-Shirt</h3>
                                 </div>
-                                <div className="col col-md-auto  rounded box brand-category-1 mb-5">
+                                <div className="brand-short mb-5">
                                     <Link >
-                                        <img src={Short} alt="" className="fluid mx-auto d-block w-100"/>
+                                        <img src={Short} alt="" />
                                     </Link>
-                                    <h3>Shorts</h3>
+                                    <h3 className="txt-short">Shorts</h3>
                                 </div>
-                                <div className="col col-md-auto rounded box brand-category-2 mb-5">
+                                <div className="brand-jacket mb-5">
                                     <Link to=''>
-                                        <img src={Jacket} alt="" className="fluid mx-auto d-block w-100"/>
+                                        <img src={Jacket} alt="" />
                                     </Link>
-                                    <h3>Jacket</h3>
+                                    <h3 className="txt-jacket">Jacket</h3>
                                 </div>
-                                <div className="col col-md-auto rounded box brand-category-3 mb-5">
+                                <div className="brand-pants mb-5">
                                     <Link to=''>
-                                        <img src={Pants} alt="" className="fluid mx-auto d-block w-100"/>
+                                        <img src={Pants} alt=""/>
                                     </Link>
-                                    <h3>Pants</h3>
+                                    <h3 className="txt-pants">Pants</h3>
                                 </div>
-                                <div className="col col-md-auto rounded box brand-category-4 mb-5">
+                                <div className="brand-shoes mb-5">
                                     <Link to=''>
-                                        <img src={Shoes} alt="" className="fluid mx-auto d-block w-100"/>
+                                        <img src={Shoes} alt=""/>
                                     </Link>
-                                    <h3>Shoes</h3>
+                                    <h3 className="txt-shoes">Shoes</h3>
                                 </div>
-                        </div>
+                                <div className="brand-watch mb-5">
+                                    <Link to=''>
+                                        <img src={Watch} alt=""/>
+                                    </Link>
+                                    <h3>MisWatch</h3>
+                                </div>
+                        </Slider>
                     </div>
                 </div>
             </div>

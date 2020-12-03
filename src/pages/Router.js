@@ -1,15 +1,21 @@
 import React from 'react'
 import {BrowserRouter, Route} from "react-router-dom";
-import Detail from '../components/Detail/Detail';
+import ConfirmPass from './ConfirmPass';
+import Detail from './Detail';
 import Home from './Home';
 import Login from './Login/Login'
+import ResetPass from './ResetPass';
+import Signup from './Signup/Signup'
 
 export default function Router() {
     return (
         <BrowserRouter>
             <Route path="/" exact component={Home} />
-            <Route path="/login" exact component={Login} />
-            <Route path="/detail/:id" exact component={Detail} />
+            <Route path="/login" component={Login} />
+            <Route path="/reset-pass" component={ResetPass} />
+            <Route path="/confirm-pass" component={ConfirmPass} />
+            <Route path="/signup" component={Signup} />
+            <Route path="/product/:id" component={Detail} />
         </BrowserRouter>
     );
 }

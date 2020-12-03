@@ -6,7 +6,7 @@ import Rating from "../../Rating/Rating"
 import axios from 'axios'
 import './popular.css'
 
-const base_url = "http://localhost:4000/search/new";
+const base_url = "http://localhost:4000/search/popular";
 export default class Popular extends Component {
     state = {
         products: [],
