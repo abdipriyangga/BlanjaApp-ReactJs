@@ -67,7 +67,7 @@ export default class Carousell extends Component {
     }
         return (
             <>
-            <div className="container p-5">
+            <div className="container p-5" style={{marginTop: "150px"}}>
                 <Slider {...settings}>
                 <div>
                     <img src={Img1} className="img1" alt="Credit to Joshua Earle on Unsplash"/>

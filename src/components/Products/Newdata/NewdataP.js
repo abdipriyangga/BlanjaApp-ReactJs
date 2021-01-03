@@ -45,7 +45,7 @@ class NewdataP extends Component {
                                 <p className="card-text price">${product_price}</p>
                                 <p className="text-product-category">{category_name}</p>
                                 <p className="text-product-description">{description}</p>
-                                <Rating product_rating={product_rating}/>
+                                <Rating product_rating={product_rating} style={{marginLeft: "18"}} />
                             </div>
                         </Card>
                     

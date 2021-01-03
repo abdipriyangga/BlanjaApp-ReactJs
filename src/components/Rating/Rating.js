@@ -14,10 +14,10 @@ export default class Rating extends Component {
             <div className="d-flex">
                 <div className="rate">
                     {rate.map(() => {
-                        return <i className="fas fa-star" style={{color: "#ffcd05"}}/>
+                        return <i className="fas fa-star ml-1" style={{color: "#ffcd05"}}/>
                     })}
                 </div>
-                <p className="text-muted rate-num" >({product_rating})</p>
+                <p className="text-muted rate-num ml-2" >({product_rating})</p>
             </div>
             </>
         )

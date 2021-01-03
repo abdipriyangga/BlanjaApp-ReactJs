@@ -45,7 +45,7 @@ export default class Detail extends Component {
                     <p className="txt-brand text-muted">{product_brand}</p>
                     <Rating product_rating={product_rating} />
                     <p className="txt-brand text-muted mt-2">Price</p>
-                    <h2>Rp. {product_price}</h2>
+                    <h2>$ {product_price}</h2>
                     <p className="mt-4" style={{fontSize:"16px", fontWeight:"bold"}} >Color</p>
                     <Row className="justify-content-around ml-1" style={{width:'200px'}}>
                         <Link>
@@ -105,7 +105,7 @@ export default class Detail extends Component {
                 <p className="prdct-revw">Peoduct review</p>
                 <div className="ratee">
                     <div className="ratee-number">
-                        <p className="txt-rating">{product_rating}<p className="per text-muted">/5</p> </p>
+                        <p className="txt-rating">5{product_rating}<p className="per text-muted">/5</p> </p>
                         <div className="d-flex d-flex justify-content-center">
                             <i className="fas fa-star" style={{color: "#ffcd05"}}/>
                             <i className="fas fa-star" style={{color: "#ffcd05"}}/>

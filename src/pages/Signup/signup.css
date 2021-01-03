@@ -27,9 +27,10 @@
     font-weight: 1000;
 }
 .text-brand {
-    position: absolute;
-    margin-top: -30px ;
-    margin-left: 51%; 
+    margin-left: 47.5%;
+     position: absolute;
+    margin-top: -30px; 
+    font-weight: 600; 
     margin-right: auto;
 }
 
